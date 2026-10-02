@@ -1,17 +1,18 @@
-# Akshay Gupta — Spirit Blossom Portfolio
+# Akshay Gupta — Portfolio
 
-A cinematic Ahri-inspired personal website for Akshay Gupta, Computer Science student at UCF.
+Professional personal portfolio for a Computer Science student at the University of Central Florida, with an Ahri-inspired visual identity.
 
-## Features
+## Content
 
-- Next.js App Router with TypeScript
-- Custom Ahri-inspired hero artwork
-- Interactive Three.js spirit orb with nine orbital rings
-- Spirit Blossom and Moonlight palettes, pause control and reduced-motion support
-- Responsive layout, keyboard access, mobile navigation, and WebGL fallback
-- Vercel deployment from the repository root
+- Selected work: Total Recall, GradFinance, and Mars / Jigyasa
+- Project descriptions, implementation notes, technology lists, and public source links
+- Education, project-backed skills, LinkedIn, GitHub, and email contact
+- Printable résumé at `/resume`
+- Responsive mobile navigation, keyboard access, reduced-motion support, and email copying
 
-## Run locally
+Project descriptions are grounded in the linked repositories and Akshay’s project history. Project graphics are explanatory illustrations, not application screenshots. No employment history, performance metrics, or skill ratings are invented. Ahri's hero is generated artwork. There is no WebGL or Three.js dependency.
+
+## Development
 
 Requires Node.js 22 or newer.
 
@@ -27,28 +28,19 @@ npm run build
 npm run typecheck
 ```
 
-## Deploy on Vercel
+## Vercel
 
-Import `akshaycg46/personal` in Vercel with these settings:
-
-- Framework Preset: **Next.js**
-- Root Directory: **./** (repository root)
-- Build Command: **default** (`npm run build`)
-- Output Directory: **default** (do not override with `out` or `public`)
-- Install Command: **default** (`npm install`)
-
-No environment variables are required. The project uses normal Next.js output, and all pages and public assets are served at the domain root. `vercel.json` explicitly selects the Next.js framework.
-
-If the project is already imported, verify its Root Directory and remove any custom Output Directory override, then redeploy the latest `main` commit.
+Import `akshaycg46/personal` using **Next.js**, Root Directory **./**, and the default build, install, and output settings. No environment variables are required. `vercel.json` selects the Next.js framework. Deployments run from `main`.
 
 ## Editing
 
-- Text and sections: `app/page.tsx`
-- Colors and responsive layout: `app/globals.css`
-- Interactive 3D: `app/spirit.tsx`
+- Portfolio content and project notes: `app/page.tsx`
+- Design and responsive styles: `app/globals.css`
+- Navigation and contact controls: `app/ui.tsx`
+- Résumé: `app/resume/page.tsx`
 - Metadata: `app/layout.tsx`
 - Hero artwork: `public/ahri-hero.webp`
 
-Ahri's hero is generated 3D-style raster artwork, not a rigged or rotatable character model. The spirit orb is real-time 3D geometry rendered with Three.js.
+The résumé uses browser printing, with a dedicated A4 stylesheet. Select **Print / save PDF** on the résumé page to save a PDF.
 
-This is an independent fan-inspired portfolio. Ahri and League of Legends belong to Riot Games. No affiliation or endorsement is implied.
+Independent fan-inspired portfolio. Ahri and League of Legends belong to Riot Games.
