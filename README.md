@@ -4,12 +4,12 @@ A cinematic Ahri-inspired personal website for Akshay Gupta, Computer Science st
 
 ## Features
 
-- Next.js App Router with TypeScript and static export
+- Next.js App Router with TypeScript
 - Custom Ahri-inspired hero artwork
 - Interactive Three.js spirit orb with nine orbital rings
 - Spirit Blossom and Moonlight palettes, pause control and reduced-motion support
 - Responsive layout, keyboard access, mobile navigation, and WebGL fallback
-- GitHub Pages deployment workflow
+- Vercel deployment from the repository root
 
 ## Run locally
 
@@ -20,20 +20,26 @@ npm ci
 npm run dev
 ```
 
-Open http://localhost:3000/personal/ .
+Open http://localhost:3000/ .
 
 ```bash
 npm run build
 npm run typecheck
 ```
 
-The static website is generated into `out/`.
+## Deploy on Vercel
 
-## GitHub Pages
+Import `akshaycg46/personal` in Vercel with these settings:
 
-In this repository, open **Settings → Pages** and select **GitHub Actions** as the source. Pushing to `main` runs `.github/workflows/deploy.yml` and deploys the static export to https://akshaycg46.github.io/personal/ .
+- Framework Preset: **Next.js**
+- Root Directory: **./** (repository root)
+- Build Command: **default** (`npm run build`)
+- Output Directory: **default** (do not override with `out` or `public`)
+- Install Command: **default** (`npm install`)
 
-The `basePath` in `next.config.ts` and asset URLs use `/personal`. Change these together if the repository name changes or a custom domain is added.
+No environment variables are required. The project uses normal Next.js output, and all pages and public assets are served at the domain root. `vercel.json` explicitly selects the Next.js framework.
+
+If the project is already imported, verify its Root Directory and remove any custom Output Directory override, then redeploy the latest `main` commit.
 
 ## Editing
 

@@ -9,7 +9,7 @@ export default function Home() {
  <a className="skip" href="#about">Skip to content</a>
  <header><a href="#" className="logo" aria-label="Akshay Gupta home"><span className="sigil">✧</span> AKSHAY<span className="logo-dot">.</span></a><nav aria-label="Main navigation"><a href="#about">The human</a><a href="#playground">The magic</a><a href="https://github.com/akshaycg46" target="_blank" rel="noreferrer">GitHub ↗</a></nav><a className="nav-contact" href="#connect">Let’s connect <span>↗</span></a></header>
  <section className="hero" aria-labelledby="hero-title">
- <div className="hero-art"><img src="/personal/ahri-hero.webp" alt="Ahri surrounded by flowing luminous tails, holding a blue spirit orb" fetchPriority="high"/><div className="art-shade"/></div>
+ <div className="hero-art"><img src="/ahri-hero.webp" alt="Ahri surrounded by flowing luminous tails, holding a blue spirit orb" fetchPriority="high"/><div className="art-shade"/></div>
  <div className="hero-content"><div className="eyebrow"><i/> A LITTLE LOGIC. A LITTLE MAGIC.</div><h1 id="hero-title">Akshay<br/><em>Gupta.</em></h1><p className="hero-sub">Computer science student.<br/>UCF Knight. Always curious.</p><p className="intro">Exploring the space where code meets imagination.<br className="desktop"/> Welcome to my corner of the digital world.</p><a className="button" href="#about">Step into my world <span>↗</span></a><a className="text-link" href="https://github.com/akshaycg46" target="_blank" rel="noreferrer">Find me on GitHub <span>↗</span></a></div>
  <div className="vertical-note">INSPIRED BY AHRI · MADE OF CURIOSITY</div>
  <div className="art-label"><span className="tiny-star">✧</span><div>THE NINE-TAILED MUSE<small>Ahri / Spirit Blossom</small></div></div>
