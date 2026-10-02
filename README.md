@@ -10,7 +10,7 @@ Professional personal portfolio for a Computer Science student at the University
 - Printable résumé at `/resume`
 - Responsive mobile navigation, keyboard access, reduced-motion support, and email copying
 
-Project descriptions are grounded in the linked repositories and Akshay’s project history. Project graphics are explanatory illustrations, not application screenshots. No employment history, performance metrics, or skill ratings are invented. Ahri's hero is generated artwork. There is no WebGL or Three.js dependency.
+Project descriptions are grounded in the linked repositories and Akshay’s project history. Project graphics are explanatory illustrations, not application screenshots. No employment history, performance metrics, or skill ratings are invented. Ahri's hero is generated artwork. An interactive Three.js Charm study recreates the heart projectile, trailing ribbons, and cast/impact phases with procedural geometry. It is a fan-made visual interpretation, not an extracted Riot game asset. Reduced-motion preferences and a non-WebGL fallback are supported.
 
 ## Development
 
@@ -37,6 +37,7 @@ Import `akshaycg46/personal` using **Next.js**, Root Directory **./**, and the d
 - Portfolio content and project notes: `app/page.tsx`
 - Design and responsive styles: `app/globals.css`
 - Navigation and contact controls: `app/ui.tsx`
+- Ahri Charm interaction: `app/charm.tsx`
 - Résumé: `app/resume/page.tsx`
 - Metadata: `app/layout.tsx`
 - Hero artwork: `public/ahri-hero.webp`
